@@ -1,0 +1,117 @@
+/* Base Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.resume-container {
+    background-color: rgb(202, 210, 216);
+    display: flex;
+    flex-wrap: wrap; /* Enables responsiveness */
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left-section {
+    background-color: antiquewhite;
+    color: black;
+    padding: 20px;
+    width: 100%; /* Full width on smaller screens */
+    text-align: center;
+    border-right: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    padding: 2%;
+    margin: 20px 0 10px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 0 15px blue;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 15px 0;
+    border: 3px solid blueviolet;
+     font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 0 15px blue;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.right-section {
+    width: 100%; /* Full width on smaller screens */
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+ul {
+    list-style-type: square;
+    padding: 0;
+    margin: 10px 0;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    color: blue;
+    background-color: lightblue;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .resume-container {
+        flex-wrap: nowrap; /* Aligns items side-by-side on larger screens */
+    }
+
+    .left-section {
+        width: 30%;
+        border-right: 5px solid blue;
+    }
+
+    .right-section {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+}
